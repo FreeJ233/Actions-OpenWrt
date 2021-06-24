@@ -13,7 +13,8 @@
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
-git clone https://github.com/xiaorouji/openwrt-passwall package/passwall
+#git clone https://github.com/xiaorouji/openwrt-passwall package/passwall
+git clone https://github.com/fw876/helloworld.git package/helloworld
 
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 sed -i 's/'OpenWrt'/'U1+'/g' package/base-files/files/bin/config_generate
