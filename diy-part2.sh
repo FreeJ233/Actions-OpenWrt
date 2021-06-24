@@ -15,18 +15,16 @@
 
 #删除默认主题
 rm -rf /openwrt/package/lean/luci-theme-argon
-
 #添加默认主题
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
+#修改默认主题
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
 
 #添加passwall
 #git clone https://github.com/xiaorouji/openwrt-passwall package/passwall
 
 #添加helloworld
 git clone https://github.com/fw876/helloworld.git package/helloworld
-
-#修改默认主题
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
 
 #修改默认Lan地址
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
