@@ -26,9 +26,6 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci
 #添加helloworld
 git clone https://github.com/fw876/helloworld.git package/helloworld
 
-#添加openclash
-git clone https://github.com/vernesong/OpenClash/tree/master/luci-app-openclash pachage/openclash
-
 #修改默认Lan地址
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 
