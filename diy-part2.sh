@@ -14,11 +14,11 @@
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
 #删除默认主题
-rm -rf /openwrt/package/lean/luci-theme-argon
+#rm -rf /openwrt/package/lean/luci-theme-argon
 #添加默认主题
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
+#git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 #修改默认主题
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
+#sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
 
 #添加passwall
 git clone https://github.com/xiaorouji/openwrt-passwall package/passwall
